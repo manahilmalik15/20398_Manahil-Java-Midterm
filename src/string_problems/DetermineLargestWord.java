@@ -22,7 +22,7 @@ public class DetermineLargestWord {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
 
-        // Implement here
+        System.out.println(findTheLargestWord(wordGiven));
 
         return map;
     }
