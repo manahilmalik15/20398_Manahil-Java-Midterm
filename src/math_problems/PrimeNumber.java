@@ -30,7 +30,9 @@ public class PrimeNumber {
             System.out.print(i + " ");
     }
 }
-public static void main(String[] args){
+
+    public static void main(String[] args) {
+
     int n = 1000000;
 primeNumber(n);
     }

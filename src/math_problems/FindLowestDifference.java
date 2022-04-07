@@ -1,5 +1,6 @@
 package math_problems;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FindLowestDifference {
@@ -8,27 +9,7 @@ public class FindLowestDifference {
      * Write a method to return the lowest number, that is not shared between the 2 arrays below
      * HINT: The lowest number that isn't shared between these arrays is 1
      */
-static int findLowestDifference (int[]array1, int[]array2) {
-    Arrays.sort(array1);
-    Arrays.sort(array2);
 
-    int a = 0, b = 0;
-
-    while (a < array1.length && b < array2.length) {
-
-        if (array1[a] == array2[b]) {
-            return array1[a];
-
-        }
-        if (array1[a] > array2[b]) {
-            b++;
-        }
-        if (array1[a] < array2[b]) {
-            a++;
-        }
-    }
-    return 1;
-}
 public static void main(String[] args) {
 
 
@@ -37,4 +18,32 @@ public static void main(String[] args) {
 
         System.out.println(findLowestDifference(array1,array2));
     }
+
+public static int findLowestDifference(int [] array1, int[] array2){
+    ArrayList<Integer> arrayList1 = new ArrayList<>();
+    ArrayList<Integer> arrayList2= new ArrayList<>();
+    ArrayList<Integer> arrayList3= new ArrayList<>();
+    int lowest= Integer.MAX_VALUE;
+
+    for(int num: array1){
+        arrayList1.add(num);
+    }
+
+    for (int num: array2){
+        arrayList2.add(num);
+    }
+
+    for(Integer num: arrayList1){
+        if(!(arrayList2.contains(num))){
+            arrayList3.add(num);
+        }
+    }
+    for(Integer num: arrayList3){
+        if(num < lowest){
+            lowest=num;
+        }
+    }
+    return lowest;
+
+}
 }

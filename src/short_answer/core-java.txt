@@ -40,142 +40,172 @@ Can you make an Object from an Interface and Abstract class? If yes or no, how w
 Answer: No, you cannot instantiate or make objects in an interface and abstract class.
 
 What is Access Modifier?
-Answer:
+Answer: Access modifiers are object-oriented programming that is used to set the accessibility of classes, constructors, methods, and other members of Java.
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer: Object Oriented Programming. Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+Inheritance in Java is a concept that acquires the properties from one class to other classes.
+Abstraction is defined as the process of reducing the object to its essence so that only the necessary characteristics are exposed to the users.
+Abstraction defines an object in terms of its properties (attributes), behavior (methods), and interfaces (means of communicating with other objects).
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer: A package in Java is used to group related classes. Java.lang is imported by default.
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer: An application programming interface (API), in the context of Java, is a collection of prewritten packages, classes, and interfaces with their respective methods, fields and constructors.
+Public, private and protected are API's that we have used.
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer: The Java programming language supports multiple inheritance of type, which is the ability of a class to implement more than one interface. An object can have multiple types: the type of its own class and the types of all the interfaces that the class implements.
 
 What is method overloading? List all of the different ways to overload.
-Answer:
+Answer: If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+Changing number of arguments and changing data types of arguments are different ways to overload.
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer: The try-catch is the simplest method of handling exceptions. Put the code you want to run in the try block, and any Java exceptions that the code throws are caught by one or more catch blocks.
+        This method will catch any type of Java exceptions that get thrown. This is the simplest mechanism for handling exceptions.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer: The keyword static means that the particular member belongs to a type itself, rather than to an instance of that type.
+        This means we'll create only one instance of that static member that is shared across all instances of the class.
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer: The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
+       - variable
+        -method
+        -class
+        The final keyword can be initialized in the constructor only. The blank final variable can be static also which will be initialized in the static block only.
 
 Explain the difference between final, finally and finalize?
-Answer:
+Answer: The basic difference between final, finally and finalize is that the final is an access modifier, finally is the block in Exception Handling and finalize is the method of object class.
 
 What is a constructor?
 Answer:
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
 
 Can we have multiple constructors in a class?
-Answer:
+Answer: yes we can.
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer: If a class does not explicitly declare any constructors, the Java platform automatically provides a no-argument constructor, called the default constructor, that does nothing.
 
 What is "this" keyword in Java? When would we use it?
-Answer:
+Answer: The this keyword refers to the current object in a method or constructor.
+        The most common use of the this keyword is to eliminate the confusion between class attributes and parameters with the same name (because a class attribute is shadowed by a method or constructor parameter).
 
 What is "super" keyword in Java? What are some scenarios we would use it?
-Answer:
+Answer:The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+Super can be used to refer immediate parent class instance variable.
+Super can be used to invoke immediate parent class method.
+Super() can be used to invoke immediate parent class constructor.
 
 What does JVM stand for?
-Answer:
+Answer: Java Virtual Machine.
 
 Is JVM platform independent?
-Answer:
+Answer: No it is platform dependent.
 
 What version of Java are you using?
-Answer:
+Answer: Version 8.
 
 What does JAR stand for?
-Answer:
+Answer: Java Archive.
 
 What is the difference between JDK and JVM?
-Answer:
+Answer: JDK is platform dependent i.e for different platforms different JDK required.
+JVM is platform independent.
+As JDK is responsible for prime development so it contains tools for developing, debugging and monitoring java application.
+JVM does not include software development tools.
 
 What is the difference between JVM and JRE?
-Answer:
+Answer: JRE is an environment, in order to execute any Java program locally.
+        JVM is where it's responsible for converting the Bytecode into machine specific code and makes java program write-once-run-anywhere.
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer: Compile-time and Runtime are the two programming terms used in the software development. Compile-time is the time at which the source code is converted into an executable code while the run time is the time at which the executable code is started running. Both the compile-time and runtime refer to different types of error.
 
 What is heap?
-Answer:
+Answer: In Java, a heap is a chunk of memory which is shared among all threads. In a heap, all class instances and the array is allocated. It is created when JVM starts-up.
 
 How does Java manage its memory?
-Answer:
+Answer: In Java, memory management is the process of allocation and de-allocation of objects, called Memory management. Java does memory management automatically. Java uses an automatic memory management system called a garbage collector. Thus, we are not required to implement memory management logic in our application.
 
 What is the difference between String, StringBuffer and StringBuilder?
-Answer:
+Answer:String is immutable whereas StringBuffer and StringBuilder are mutable classes.
+       StringBuffer is thread-safe and synchronized whereas StringBuilder is not. That’s why StringBuilder is faster than StringBuffer.
+       String concatenation operator (+) internally uses StringBuffer or StringBuilder class.
 
 What is Singleton class?
-Answer:
+Answer: In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
 
 What is Serialization and Deserialization?
-Answer:
+Answer: Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
 
 Explain the difference between While and Do..While loops?
-Answer:
+Answer: A while loop checks the condition first and then executes the statement.
+A do while loop will execute the statement first and then check the condition.
 
 What is Enum?
-Answer:
+Answer: A Java Enum is a special Java type used to define collections of constants. More precisely, a Java enum type is a special kind of Java class. An enum can contain constants, methods etc.
 
 What is Iterator?
-Answer:
+Answer: An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet. It is called an "iterator" because "iterating" is the technical term for looping.
 
 Which one will take more memory: an int or Integer? Why?
-Answer:
+Answer: An integer takes more memory than an int because an integer is an object which takes 128 bits (16 bytes) to store its int value. Whereas, an int is a primitive data type and takes 32 bits(4 bytes) to store.
 
 Why are Strings considered to be immutable in Java?
-Answer:
+Answer: The String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading. The reason of making string final is to destroy the immutability and to not allow others to extend it.
+        The String objects are cached in the String pool, and it makes the String immutable.
 
 What is constructor chaining in Java?
-Answer:
+Answer: Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer: The difference between serial and parallel garbage collector is that serial garbage collector uses a single thread for garbage collection process while the parallel garbage collector uses multiple threads for the garbage collection. Parallel GC can use multiple CPUs to speed up the application throughput.
 
 What does JIT stands for?
-Answer:
+Answer: The Just-In-Time (JIT) compiler is a component of the runtime environment that improves the performance of Java™ applications by compiling bytecodes to native machine code at run time.
 
 Explain the process of Java garbage collection?
-Answer:
+Answer: Java garbage collection is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer: No, Garbage collection does not guarantee that a program will not run out of memory.
+        The purpose of garbage collection (GC) is to identify and discard objects that are no longer needed by a Java program, so that their resources can be reclaimed and reused
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer: The major difference between Stack memory and heap memory is that the stack is used to store the order of method execution and local variables while the heap memory stores the objects and it uses dynamic memory allocation and deallocation.
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer: Reflection is a feature in the Java programming language. It allows an executing Java program to examine or "introspect" upon itself, and manipulate internal properties of the program. For example, it's possible for a Java class to obtain the names of all its members and display them.
+The name reflection is used to describe code which is able to inspect other code in the same system (or itself).
+For example, say you have an object of an unknown type in Java, and you would like to call a 'doSomething' method on it if one exists. Java's static typing system isn't really designed to support this unless the object conforms to a known interface, but using reflection, your code can look at the object and find out if it has a method called 'doSomething' and then call it if you want to.
 
 What is multithreading in Java?
-Answer:
+Answer:Java is a multi-threaded programming language which means we can develop multi-threaded program using Java. A multi-threaded program contains two or more parts that can run concurrently and each part can handle a different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
 
 What is synchronization in Java?
-Answer:
+Answer:Synchronization in Java is the capability to control the access of multiple threads to any shared resource.
+       Java Synchronization is better option where we want to allow only one thread to access the shared resource.
 
 What is a Framework?
-Answer:
+Answer: Java Framework is the body or platform of pre-written codes used by Java developers to develop Java applications or web applications. In other words, Java Framework is a collection of predefined classes and functions that is used to process input, manage hardware devices interacts with system software. It acts like a skeleton that helps the developer to develop an application by writing their own code.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer:Selenium, Serenity, JUnit, TestNG and Cucumber are some testing frameworks available in Java.
 
 What are jUnit and testNG?
-Answer:
+Answer: JUnit is an open-source framework used to trigger and write tests.	TestNG is a Java-based framework that is an upgraded option for running tests.
 
 What are the dependencies for this project?
-Answer:
+Answer: The Java code in a JavaCompute node might contain references to other Java projects in the Eclipse workspace (internal dependencies), or to external JAR files, for example the JavaMail API (external dependencies), or a set of JAXB Java object classes (internal or external).
 
 What is dependency injection in Java?
-Answer:
+Answer: Dependency injection (DI) is the concept in which objects get other required objects from outside.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer: Static binding is the binding which can be resolved at compile time by the compiler known as static or early binding. The binding of all the static, private, and final methods is done at compile-time.
+In Dynamic binding compiler doesn’t decide the method to be called. Overriding is a perfect example of dynamic binding. In overriding both parent and child classes have the same method.

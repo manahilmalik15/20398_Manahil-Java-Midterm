@@ -1,70 +1,91 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: Data Structures are used to increase the efficiency and performance of an application by organizing the data in such a manner that it requires less space with higher processing speed.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: Insertion: Add a new data item in the given collection of data items.
+        Deletion: Delete an existing data item from the given collection of data items.
+        Traversal: Access each data item exactly once so that it can be processed.
+        Searching: Find out the location of the data item if it exists in the given collection of data items.
+        Sorting: Arranging the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data.
 
 When would we use data structures in the real world?
-Answer:
+Answer: To implement back functionality in the internet browser.
 
 What is an Array?
-Answer:
+Answer: Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+        To declare an array, define the variable type with square brackets.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: Array is a fixed length data structure whereas ArrayList is a variable length Collection class. We cannot change length of array once created in Java but ArrayList can be changed.
 
 What is a LinkedList?
-Answer:
+Answer: In Java, the linked list class is an ordered collection that contains many objects of the same type. Data in a Linked List is stored in a sequence of containers. The list holds a reference to the first container and each container has a link to the next one in the sequence.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: Arrays store elements in contiguous memory locations, resulting in easily calculable addresses for the elements stored and this allows faster access to an element at a specific index. Linked lists are less rigid in their storage structure and elements are usually not stored in contiguous locations, hence they need to be stored with additional tags giving a reference to the next element. This difference in the data storage scheme decides which data structure would be more suitable for a given situation.
 
 What is a Queue?
-Answer:
+Answer: Java Queue is an interface available in java.util package and extends java.util.Collection interface.
+        Just like Java List, Java Queue is a collection of ordered elements (Or objects) but it performs insert and remove operations differently.
 
 What is a Stack (referring to data structures)?
-Answer:
+Answer: Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 What is FIFO and LIFO?
-Answer:
+Answer: FIFO is an abbreviation for first in, first out. It is a method for handling data structures where the first element is processed first and the newest element is processed last.
+LIFO is an abbreviation for Last in, first out is same as first in, last out (FILO). It is a method for handling data structures where the last element is processed first and the first element is processed last.
 
 Explain Big O Notation?
-Answer:
+Answer: Big O describes the set of all algorithms that run no worse than a certain speed (it's an upper bound)
+        Conversely, Big Ω describes the set of all algorithms that run no better than a certain speed (it's a lower bound)
+        Finally, Big Θ describes the set of all algorithms that run at a certain speed (it's like equality)
 
 What is the best case to search an element from an array?
-Answer:
+Answer: The best case complexity is O(1) when element is first or last element in the array.
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: The worst-case time complexity is O(log N). This means that as the number of values in a dataset increases, the performance time of the algorithm (the number of comparisons) increases as a function of the base-2 logarithm of the number of values.
 
 Describe what a tree data structure is?
-Answer:
+Answer: A Tree is a non-linear data structure where data objects are organized in terms of hierarchical relationship. The structure is non-linear in the sense that, unlike simple array and linked list implementation, data in a tree is not organized linearly. Each data element is stored in a structure called a node.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph is a data structure that stores connected data. Each graph consists of edges and vertices (also called nodes).
+It represents a network that connects multiple points to each other.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: One of the major differences between HashMap and Hashtable is that HashMap is non-synchronized whereas Hashtable is synchronized, which means Hashtable is thread-safe and can be shared between multiple threads but HashMap can not be shared between multiple threads without proper synchronization.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: HashMap in Java works on hashing principles. It is a data structure that allows us to store object and retrieve it in constant time O(1) provided we know the key. In hashing, hash functions are used to link keys and values in HashMap.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: Whenever you used an –ve value or, the value greater than or equal to the size of the array, then the ArrayIndexOutOfBoundsException is thrown.
+The ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at an index which is not present in the array. In other words, the index may be negative or exceed the size of an array.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer: Array in java can be copied to another array using the following ways.
+        Using variable assignment. This method has side effects as changes to the element of an array reflects on both the places. To prevent this side effect following are the better ways to copy the array elements.
+        Create a new array of the same length and copy each element.
+        Use the clone method of the array. Clone methods create a new array of the same size.
+        Use System.arraycopy() method. arraycopy can be used to copy a subset of an array
 
 What is DFS and BFS?
-Answer:
+Answer:DFS stands for Depth First Search. DFS(Depth First Search) uses Stack data structure.DFS is a edge based technique. It uses the Stack data structure, performs two stages, first visited vertices are pushed into stack and second if there is no vertices then visited vertices are popped.
+BFS stands for (Breadth First Search) and it uses Queue data structure for finding the shortest path. It is a vertex based technique for finding a shortest path in graph.
 
 What is Recursion?
-Answer:
+Answer: Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
 
 What are linear and non-linear data Structures?
-Answer:
+Answer: A Linear data structure have data elements arranged in sequential manner and each member element is connected to its previous and next element. In linear data structure, data elements are sequentially connected and each element is traversable through a single run.
+A non-linear data structure has no set sequence of connecting all its elements and each element can have multiple paths to connect to other elements. In non-linear data structure, data elements are hierarchically connected and are present at various levels.
 
 Outline different sorting algorithms and their time complexities:
-
+Time Complexity is defined as the number of times a particular instruction set is executed rather than the total time is taken. It is because the total time taken also depends on some external factors like the compiler used, processor’s speed, etc.
+Selection sort has O(n2) as there are two nested loops.
+Bubble sort has O(n*n). Worst case occurs when array is reverse sorted.
+Insertion sort has O(n^2) time complexity.
+Heap sort has time complexity of heapify which is O(Logn). Time complexity of createAndBuildHeap() is O(n) and the overall time complexity of Heap Sort is O(nLogn).
