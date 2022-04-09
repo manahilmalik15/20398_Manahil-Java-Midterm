@@ -197,7 +197,7 @@ public class SharedStepsDatabase {
      * @param columnName Name of the column
      * @param list The list to be inserted
      */
-    public static void insertList(String tableName, String columnName, List<Object> list) {
+    public static void insertList(String tableName, String columnName, List<String> list) {
         try {
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `" + tableName + "`;");
             ps.executeUpdate();

@@ -21,6 +21,11 @@ public class DataReader {
     public static void main(String[] args) {
         String textFilePath = System.getProperty("user.dir") + "/src/data_structures/data/self-driving-car.txt";
 
+
+
+
+
+
     }
 
 }
